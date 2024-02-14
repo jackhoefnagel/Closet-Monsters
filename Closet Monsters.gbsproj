@@ -16,8 +16,8 @@
                 {
                     "id": "e63a0fb5-2d9e-4a85-9ba0-e711e6de6cdc",
                     "spriteSheetId": "30b8266a-0533-4f90-bd33-e97dc1d498ea",
-                    "x": 30,
-                    "y": 33,
+                    "x": 32,
+                    "y": 34,
                     "movementType": "static",
                     "direction": "down",
                     "script": [
@@ -2314,8 +2314,8 @@
             "id": "5e64882f-8ce6-423e-b582-70fdb2142ff6",
             "name": "Cave",
             "backgroundId": "6fad1892-bcb2-4924-bd1c-1e4d03dfeabb",
-            "x": 1246.264768151003,
-            "y": 96.97118997665353,
+            "x": 598.1546091124844,
+            "y": 665.0271330933247,
             "width": 20,
             "height": 18,
             "actors": [
@@ -2371,28 +2371,34 @@
                             "id": "353bee92-fd23-468b-bf09-99a098d1629d",
                             "command": "EVENT_TEXT",
                             "args": {
-                                "text": "It's dangerous to\ngo without docs."
+                                "text": [
+                                    "Welcome! Overcome \nyour fears..."
+                                ]
                             }
                         },
                         {
                             "id": "3f4b8292-f024-47fb-955d-f7f99a08415e",
                             "command": "EVENT_TEXT",
                             "args": {
-                                "text": "Check out\ngbstudio.dev/docs"
+                                "text": [
+                                    "...by opening all\nthe closets "
+                                ]
                             }
                         },
                         {
                             "id": "89023ce1-b504-48b3-b0af-9cec0b868bb0",
                             "command": "EVENT_TEXT",
                             "args": {
-                                "text": "Also, try moving\nthe rock outside."
+                                "text": [
+                                    "But beware! Don't\ntake on those\nyou are not ready\nfor!"
+                                ]
                             }
                         },
                         {
                             "id": "ac4ebd76-c81c-4f85-91f9-29cef760538c",
                             "command": "EVENT_SET_TRUE",
                             "args": {
-                                "variable": "7"
+                                "variable": "4"
                             }
                         }
                     ],
@@ -2518,7 +2524,31 @@
                     "symbol": "actor_12"
                 }
             ],
-            "triggers": [],
+            "triggers": [
+                {
+                    "name": "",
+                    "id": "a548d68a-439f-4c97-a6ea-fb2e3c21e00b",
+                    "x": 9,
+                    "y": 16,
+                    "symbol": "trigger_15",
+                    "width": 2,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
+                                "x": 36,
+                                "y": 37,
+                                "direction": "left",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "0a089bb9-8ffa-435a-9851-7f71312554fa"
+                        }
+                    ],
+                    "leaveScript": []
+                }
+            ],
             "collisions": [
                 0,
                 0,
@@ -3521,7 +3551,7 @@
             "actors": [
                 {
                     "id": "4548028c-0fd3-4d59-90e3-002433e44af4",
-                    "spriteSheetId": "17219846-cda9-4e84-bdfa-c3ff105d42cc",
+                    "spriteSheetId": "1e27bb8e-c805-435a-8b87-05b4f50da4f0",
                     "x": 15,
                     "y": 12,
                     "movementType": "static",
@@ -5123,9 +5153,9 @@
                                             "id": "a5dddc76-e5fe-424a-9b2b-1ad1834acefb",
                                             "command": "EVENT_SWITCH_SCENE",
                                             "args": {
-                                                "sceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
-                                                "x": 33,
-                                                "y": 36,
+                                                "sceneId": "5e64882f-8ce6-423e-b582-70fdb2142ff6",
+                                                "x": 9,
+                                                "y": 13,
                                                 "direction": "left",
                                                 "fadeSpeed": "4"
                                             }
@@ -12496,9 +12526,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1115,
-        "worldScrollY": 0,
-        "zoom": 197.72900872677565,
+        "worldScrollX": 271,
+        "worldScrollY": 279,
+        "zoom": 146.9749974682927,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",

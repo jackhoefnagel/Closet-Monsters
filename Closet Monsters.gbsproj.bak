@@ -3077,7 +3077,16 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_15",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_ACTOR_SET_STATE",
+                            "args": {
+                                "actorId": "$self$",
+                                "spriteStateId": "Opened"
+                            },
+                            "id": "15ae6d8f-0253-4d4f-804a-4f28cc0b6d1a"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -3512,7 +3521,7 @@
             "actors": [
                 {
                     "id": "4548028c-0fd3-4d59-90e3-002433e44af4",
-                    "spriteSheetId": "17219846-cda9-4e84-bdfa-c3ff105d42cc",
+                    "spriteSheetId": "1e27bb8e-c805-435a-8b87-05b4f50da4f0",
                     "x": 15,
                     "y": 12,
                     "movementType": "static",
@@ -7161,7 +7170,40 @@
             "id": "4926c27b-8bca-476f-9c31-2d20430c44b9",
             "x": 454.3483296224481,
             "y": 41.57750158295124,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "ac7f6438-70a3-4dd6-8203-7ca4e340ef50",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_16",
+                    "script": [
+                        {
+                            "command": "EVENT_ACTOR_SET_STATE",
+                            "args": {
+                                "actorId": "$self$",
+                                "spriteStateId": "Opened"
+                            },
+                            "id": "a27b8156-0c05-4a8b-b9f0-3feca01dace0"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "41be205d-eae6-46f4-a9e3-872069151a22",
+                    "x": 3,
+                    "y": 7
+                }
+            ],
             "triggers": [
                 {
                     "name": "",
@@ -7586,7 +7628,40 @@
             "id": "79fd83c2-85a2-4baa-b1e7-f42e9d9412b8",
             "x": 640.746105107963,
             "y": 41.03152311108835,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "ac7f6438-70a3-4dd6-8203-7ca4e340ef50",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_19",
+                    "script": [
+                        {
+                            "command": "EVENT_ACTOR_SET_STATE",
+                            "args": {
+                                "actorId": "$self$",
+                                "spriteStateId": "Opened"
+                            },
+                            "id": "eecc5962-bde8-4837-9b33-e75626321bca"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "84095360-1e2b-4720-8a56-77321668fffe",
+                    "x": 3,
+                    "y": 7
+                }
+            ],
             "triggers": [
                 {
                     "name": "",
@@ -8011,7 +8086,40 @@
             "id": "780203ff-1a14-4d41-86af-12e4879daea3",
             "x": 837.5636320181345,
             "y": 30,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "ac7f6438-70a3-4dd6-8203-7ca4e340ef50",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_20",
+                    "script": [
+                        {
+                            "command": "EVENT_ACTOR_SET_STATE",
+                            "args": {
+                                "actorId": "$self$",
+                                "spriteStateId": "Opened"
+                            },
+                            "id": "9bc30e8d-217d-41c6-979e-d39eecc4b37d"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "3ed1f893-7559-4232-a8f8-f305f55b67c8",
+                    "x": 3,
+                    "y": 7
+                }
+            ],
             "triggers": [
                 {
                     "name": "",
@@ -8436,7 +8544,40 @@
             "id": "d4354862-0a21-4126-8011-4add6099b888",
             "x": 1034.3811589283061,
             "y": 30,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "ac7f6438-70a3-4dd6-8203-7ca4e340ef50",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_21",
+                    "script": [
+                        {
+                            "command": "EVENT_ACTOR_SET_STATE",
+                            "args": {
+                                "actorId": "$self$",
+                                "spriteStateId": "Opened"
+                            },
+                            "id": "5082cc5a-8018-4c74-be69-be873c305dd3"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "e2f41909-e521-4604-ae1c-f93a3a42c8e4",
+                    "x": 3,
+                    "y": 7
+                }
+            ],
             "triggers": [
                 {
                     "name": "",
@@ -8945,8 +9086,8 @@
             "canvasHeight": 16,
             "boundsX": 0,
             "boundsY": 0,
-            "boundsWidth": 16,
-            "boundsHeight": 16,
+            "boundsWidth": 0,
+            "boundsHeight": 0,
             "animSpeed": 15
         },
         {
@@ -12355,8 +12496,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 505,
-        "worldScrollY": 378,
+        "worldScrollX": 1264,
+        "worldScrollY": 865,
         "zoom": 197.72900872677565,
         "customColorsEnabled": false,
         "sgbEnabled": false,
