@@ -8684,7 +8684,16 @@
             "width": 25,
             "height": 20,
             "type": "PLATFORM",
-            "paletteIds": [],
+            "paletteIds": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                ""
+            ],
             "spritePaletteIds": [],
             "collisions": [
                 0,
@@ -9197,6 +9206,20 @@
             "triggers": [],
             "script": [
                 {
+                    "command": "EVENT_PALETTE_SET_BACKGROUND",
+                    "args": {
+                        "palette0": "default-ui",
+                        "palette1": "keep",
+                        "palette2": "keep",
+                        "palette3": "keep",
+                        "palette4": "keep",
+                        "palette5": "keep",
+                        "palette6": "keep",
+                        "palette7": "keep"
+                    },
+                    "id": "f027bca4-8c93-4474-bf21-b98a83d1c164"
+                },
+                {
                     "command": "EVENT_ACTOR_DEACTIVATE",
                     "args": {
                         "actorId": "$self$"
@@ -9683,7 +9706,7 @@
                     "name": "Eyes",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "3c099a5d-1877-4e79-a99c-9db946608333",
+                    "spriteSheetId": "c62bb111-1dcb-4e90-8f08-9bb845d22c82",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
@@ -9703,7 +9726,16 @@
                         }
                     ],
                     "startScript": [],
-                    "updateScript": [],
+                    "updateScript": [
+                        {
+                            "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+                            "args": {
+                                "actorId": "$self$",
+                                "speed": 255
+                            },
+                            "id": "0ffaa7a5-d367-45cd-b277-9ffda19a1b8a"
+                        }
+                    ],
                     "hit1Script": [],
                     "hit2Script": [],
                     "hit3Script": [],
@@ -9714,6 +9746,20 @@
             ],
             "triggers": [],
             "script": [
+                {
+                    "command": "EVENT_PALETTE_SET_BACKGROUND",
+                    "args": {
+                        "palette0": "",
+                        "palette1": "keep",
+                        "palette2": "keep",
+                        "palette3": "keep",
+                        "palette4": "keep",
+                        "palette5": "keep",
+                        "palette6": "keep",
+                        "palette7": "keep"
+                    },
+                    "id": "70a86096-46ec-4477-b532-8f4590310cc5"
+                },
                 {
                     "command": "EVENT_ACTOR_DEACTIVATE",
                     "args": {
@@ -9765,9 +9811,17 @@
                     "command": "EVENT_ACTOR_SET_STATE",
                     "args": {
                         "actorId": "a1bfd43d-4a92-4347-92da-0d2ed6ed8acf",
-                        "spriteStateId": "opening"
+                        "spriteStateId": "OpeningEyes"
                     },
                     "id": "3b83e945-9487-4ddc-9bd1-35843d871907"
+                },
+                {
+                    "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+                    "args": {
+                        "actorId": "a1bfd43d-4a92-4347-92da-0d2ed6ed8acf",
+                        "speed": 255
+                    },
+                    "id": "be48cd03-8bb9-4296-b311-f55ce758e1e7"
                 },
                 {
                     "command": "EVENT_WAIT",
@@ -9777,14 +9831,6 @@
                         "units": "frames"
                     },
                     "id": "c0683643-b63a-48c1-978c-55ad577b01a5"
-                },
-                {
-                    "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
-                    "args": {
-                        "actorId": "a1bfd43d-4a92-4347-92da-0d2ed6ed8acf",
-                        "speed": 255
-                    },
-                    "id": "be48cd03-8bb9-4296-b311-f55ce758e1e7"
                 },
                 {
                     "command": "EVENT_ACTOR_SET_FRAME",
@@ -11450,14 +11496,14 @@
             "numFrames": 1.5,
             "type": "animated",
             "filename": "intro0-eyes.png",
-            "checksum": "bc92e8fe87286cafa7d8743a830747ea2a94ec8a",
+            "checksum": "25d7ac92170b294130399611fa2a7fa74be1f44d",
             "width": 24,
             "height": 8,
             "states": [
                 {
                     "id": "846f76b5-6275-4fcb-a7fb-5da477c32fff",
                     "name": "",
-                    "animationType": "multi_movement",
+                    "animationType": "fixed",
                     "flipLeft": true,
                     "animations": [
                         {
@@ -11533,11 +11579,180 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "id": "7ef98c70-4741-460d-a091-d209aa862511",
+                    "name": "OpeningEyes",
+                    "animations": [
+                        {
+                            "id": "c4c2a37e-623f-4278-9355-b54f75d91b41",
+                            "frames": [
+                                {
+                                    "id": "65c6736e-558a-424a-a50b-215675cebb26",
+                                    "tiles": [
+                                        {
+                                            "id": "fc596db9-c918-4062-b2ff-9f7c3be8576c",
+                                            "x": 1,
+                                            "y": 7,
+                                            "sliceX": 0,
+                                            "sliceY": -8,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "fde1f839-0a76-40ba-82a7-e1f198973c45",
+                                            "x": 9,
+                                            "y": 7,
+                                            "sliceX": 0,
+                                            "sliceY": -8,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "2ff346b2-7740-4bf3-87f3-04f5e2eb72d0",
+                                    "tiles": [
+                                        {
+                                            "id": "3fd3dd73-8707-47cf-af28-4bfb1cdfed1c",
+                                            "x": 1,
+                                            "y": 8,
+                                            "sliceX": 8,
+                                            "sliceY": -8,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP1",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "7e2565ec-559a-412c-b417-475b42e61167",
+                                            "x": 9,
+                                            "y": 8,
+                                            "sliceX": 8,
+                                            "sliceY": -8,
+                                            "palette": 0,
+                                            "flipX": true,
+                                            "flipY": false,
+                                            "objPalette": "OBP1",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "1665fe8f-0a03-49f4-af74-a459a9052042",
+                                    "tiles": [
+                                        {
+                                            "id": "ebf6f6e1-6249-412c-b873-e9fb3ca34880",
+                                            "x": 1,
+                                            "y": 8,
+                                            "sliceX": 16,
+                                            "sliceY": -8,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP1",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "7ce8291a-0d1e-4626-bb1b-a71430c0d33e",
+                                            "x": 9,
+                                            "y": 8,
+                                            "sliceX": 16,
+                                            "sliceY": -8,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP1",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "559c1bff-5ac3-4c31-8d20-f06edd4298e8",
+                            "frames": [
+                                {
+                                    "id": "6b260781-2d7d-4df3-b001-c1fc1d82a755",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5b424fec-2dc5-49d2-b388-76a3fd04aa13",
+                            "frames": [
+                                {
+                                    "id": "f9155320-e6e5-4811-9065-0e1fd26a98ee",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "f6c4fbd0-3896-477d-ac68-0a48eb4f3971",
+                            "frames": [
+                                {
+                                    "id": "33130d2f-988b-49c1-8489-5a19e39fef77",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "67053c4f-76f5-4c41-8ace-9ce0a04aa8af",
+                            "frames": [
+                                {
+                                    "id": "09781375-7b51-4218-a8eb-26d85b7bd362",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "f123e38f-f54e-415d-bbe0-62bf0ca71a6e",
+                            "frames": [
+                                {
+                                    "id": "9e92cc60-38ed-4794-88b7-f68cae859e25",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "28ae0760-0e8f-4cc9-879c-5063253ca153",
+                            "frames": [
+                                {
+                                    "id": "fc087af1-9c55-4bad-84a9-34b89365c57a",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "14129a06-0126-4692-87dc-ef9faad39ca4",
+                            "frames": [
+                                {
+                                    "id": "a79b662d-86eb-4b0d-b586-376413237bc5",
+                                    "tiles": []
+                                }
+                            ]
+                        }
+                    ],
+                    "animationType": "fixed",
+                    "flipLeft": true
                 }
             ],
-            "numTiles": 0,
-            "canvasWidth": 32,
-            "canvasHeight": 32,
+            "numTiles": 2,
+            "canvasWidth": 16,
+            "canvasHeight": 16,
             "boundsX": 0,
             "boundsY": 0,
             "boundsWidth": 16,
