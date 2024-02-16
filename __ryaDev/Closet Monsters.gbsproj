@@ -1,5 +1,5 @@
 {
-    "name": "Closet Monsters",
+    "name": "Closet Monsters RYADEV",
     "author": "jackhoefnagel",
     "_version": "3.2.0",
     "_release": "1",
@@ -18455,7 +18455,7 @@
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
         "worldScrollX": 0,
-        "worldScrollY": 68.80000305175781,
+        "worldScrollY": 67.19999694824219,
         "zoom": 84.47499746829271,
         "customColorsEnabled": true,
         "sgbEnabled": false,
@@ -18484,7 +18484,7 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            499,
+            500,
             159,
             159
         ],
