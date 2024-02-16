@@ -544,6 +544,19 @@
                                 "fadeSpeed": "2"
                             },
                             "id": "455865f6-431b-4d64-824d-03d016438ae5"
+                        },
+                        {
+                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                            "args": {
+                                "type": "993334a4-6b5e-4e1c-b9e5-83ea6db1ea15",
+                                "priority": "medium",
+                                "pitch": 4,
+                                "frequency": 200,
+                                "duration": 0.5,
+                                "wait": true,
+                                "effect": 0
+                            },
+                            "id": "be5040a1-30c0-4241-b4fd-116b66bc6014"
                         }
                     ],
                     "leaveScript": []
@@ -613,6 +626,13 @@
                         "$actor[2]$": "124e42d8-3cc4-400b-b2f9-877b9260c0ff"
                     },
                     "id": "96e4fce7-f587-4dc2-8fce-348be603f07b"
+                },
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "a6576cf6-7942-42fa-8240-505dd330d5e7"
+                    },
+                    "id": "687216f9-07ad-437a-971f-b559f6c08ec1"
                 }
             ],
             "playerHit1Script": [],
@@ -671,61 +691,6 @@
                     "symbol": "actor_8"
                 },
                 {
-                    "id": "15d7cf30-df3a-427b-883a-996b605edb40",
-                    "spriteSheetId": "e20ce140-53a5-4b1b-9964-138ba0c86925",
-                    "x": 9,
-                    "y": 7,
-                    "movementType": "static",
-                    "direction": "down",
-                    "script": [
-                        {
-                            "id": "353bee92-fd23-468b-bf09-99a098d1629d",
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "Welcome! Overcome \nyour fears..."
-                                ]
-                            }
-                        },
-                        {
-                            "id": "3f4b8292-f024-47fb-955d-f7f99a08415e",
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "...by opening all\nthe closets "
-                                ]
-                            }
-                        },
-                        {
-                            "id": "89023ce1-b504-48b3-b0af-9cec0b868bb0",
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "But beware! Don't\ntake on those\nyou are not ready\nfor!"
-                                ]
-                            }
-                        },
-                        {
-                            "id": "ac4ebd76-c81c-4f85-91f9-29cef760538c",
-                            "command": "EVENT_SET_TRUE",
-                            "args": {
-                                "variable": "4"
-                            }
-                        }
-                    ],
-                    "frame": 0,
-                    "spriteType": "static",
-                    "animSpeed": 15,
-                    "startScript": [],
-                    "hit1Script": [],
-                    "hit2Script": [],
-                    "hit3Script": [],
-                    "updateScript": [],
-                    "moveSpeed": 1,
-                    "collisionGroup": "",
-                    "symbol": "actor_9"
-                },
-                {
                     "id": "e807b22f-7477-471b-b3b3-53b699df82ab",
                     "spriteSheetId": "e9e61bf7-88fd-491d-ae01-4b7f76909108",
                     "x": 14,
@@ -764,75 +729,6 @@
                     "updateScript": [],
                     "collisionGroup": "",
                     "symbol": "actor_11"
-                },
-                {
-                    "id": "b5594786-5675-48cf-b382-18b6341b855c",
-                    "spriteSheetId": "000a6dde-cb60-436e-b357-30a529daa139",
-                    "x": 14,
-                    "y": 11,
-                    "movementType": "static",
-                    "direction": "down",
-                    "moveSpeed": 1,
-                    "animSpeed": 31,
-                    "animate": true,
-                    "script": [
-                        {
-                            "id": "81000601-b8bc-4468-a5bf-ed54884e3b06",
-                            "command": "EVENT_CHOICE",
-                            "args": {
-                                "variable": "11",
-                                "trueText": "Save Game",
-                                "falseText": "Cancel"
-                            }
-                        },
-                        {
-                            "id": "4d69294c-02dc-4246-9141-653260617b93",
-                            "command": "EVENT_IF_TRUE",
-                            "args": {
-                                "variable": "11",
-                                "__collapseElse": true
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "id": "c967dfe8-e42d-4d80-a0be-36a772930f86",
-                                        "command": "EVENT_SAVE_DATA",
-                                        "args": {
-                                            "saveSlot": 0
-                                        },
-                                        "children": {
-                                            "true": [
-                                                {
-                                                    "id": "b3e842cf-3a49-411b-a588-28e7811dddd8",
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": "Game progress has\nbeen saved."
-                                                    }
-                                                },
-                                                {
-                                                    "id": "4720e024-f89f-410e-8534-f67fbff8e673",
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": "It is now safe to\nturn off your\nsystem."
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    }
-                                ],
-                                "false": []
-                            }
-                        }
-                    ],
-                    "frame": 0,
-                    "spriteType": "static",
-                    "startScript": [],
-                    "hit1Script": [],
-                    "hit2Script": [],
-                    "hit3Script": [],
-                    "updateScript": [],
-                    "collisionGroup": "",
-                    "symbol": "actor_12"
                 }
             ],
             "triggers": [
@@ -855,6 +751,45 @@
                                 "fadeSpeed": "2"
                             },
                             "id": "0a089bb9-8ffa-435a-9851-7f71312554fa"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "de9008b3-902b-4297-885c-9809fb064f2a",
+                    "x": 9,
+                    "y": 15,
+                    "symbol": "trigger_7",
+                    "width": 2,
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "507d0e4d-abc5-4f5b-8b7e-4875945bb51f",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Welcome! Overcome \nyour fears..."
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ab3712fc-3160-4720-8e8a-eef6407e6a48",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "...by opening all\nthe closets "
+                                ]
+                            }
+                        },
+                        {
+                            "id": "5bbad276-f6cd-44de-b52a-e15cea994abe",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "But beware! Don't\ntake on those\nyou are not ready\nfor!"
+                                ]
+                            }
                         }
                     ],
                     "leaveScript": []
@@ -4000,7 +3935,7 @@
                                             "id": "a5dddc76-e5fe-424a-9b2b-1ad1834acefb",
                                             "command": "EVENT_SWITCH_SCENE",
                                             "args": {
-                                                "sceneId": "5e64882f-8ce6-423e-b582-70fdb2142ff6",
+                                                "sceneId": "7f0c3862-9816-48d3-84a2-bf721bb563b1",
                                                 "x": 9,
                                                 "y": 13,
                                                 "direction": "left",
@@ -9555,7 +9490,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "extras.png"
+            "filename": "extras.png",
+            "tileColors": []
         },
         {
             "id": "b340b9a2-2865-4e05-91c0-148846a693c8",
@@ -9598,7 +9534,8 @@
             "height": 20,
             "imageWidth": 200,
             "imageHeight": 160,
-            "filename": "intro0-0.png"
+            "filename": "intro0-0.png",
+            "tileColors": []
         },
         {
             "id": "7b9de834-d580-401d-bf20-44fb0436b4b0",
@@ -9608,7 +9545,8 @@
             "height": 19,
             "imageWidth": 168,
             "imageHeight": 152,
-            "filename": "intro0-1.png"
+            "filename": "intro0-1.png",
+            "tileColors": []
         },
         {
             "id": "f8b1c7ad-7bb2-44b2-8189-175ae8698f11",
@@ -9673,7 +9611,8 @@
             "height": 41,
             "imageWidth": 360,
             "imageHeight": 328,
-            "filename": "outside2_score.png"
+            "filename": "outside2_score.png",
+            "tileColors": []
         },
         {
             "id": "40fda058-df90-4205-a239-fe77bce4fa79",
@@ -18117,7 +18056,7 @@
                     "args": {
                         "actorId": "$self$",
                         "x": 0,
-                        "y": 2,
+                        "y": 5,
                         "moveType": "vertical",
                         "useCollisions": false
                     },
@@ -18233,6 +18172,14 @@
     ],
     "music": [
         {
+            "id": "a6576cf6-7942-42fa-8240-505dd330d5e7",
+            "name": "ClosetMonsters_outside",
+            "symbol": "song_song_template",
+            "filename": "ClosetMonsters_outside.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
             "id": "e2eb6dec-2800-4df9-a6c9-214f42e6b070",
             "name": "Rulz_GonaSpace",
             "symbol": "song_rulz_gonaspace",
@@ -18259,7 +18206,35 @@
             "type": "uge"
         }
     ],
-    "sounds": [],
+    "sounds": [
+        {
+            "id": "cc68d0d7-0b5e-426b-8bae-80c44011b2f1",
+            "name": "SFXR/click.wav",
+            "symbol": "sound_sfxr_click_wav",
+            "filename": "SFXR/click.wav",
+            "type": "wav",
+            "inode": "56119142",
+            "_v": 1708091109005
+        },
+        {
+            "id": "c4d0782b-cad9-4f51-b83f-11558dcd6ee7",
+            "name": "SFXR/door.wav",
+            "symbol": "sound_sfxr_door_wav",
+            "filename": "SFXR/door.wav",
+            "type": "wav",
+            "inode": "56124509",
+            "_v": 1708092158037
+        },
+        {
+            "id": "4f48824a-4e3e-4c11-ac46-1935bdaf262e",
+            "name": "bat/39866__jobro__analog-screech.wav",
+            "symbol": "sound_39866_jobro_analog_sc",
+            "filename": "bat/39866__jobro__analog-screech.wav",
+            "type": "wav",
+            "inode": "56115555",
+            "_v": 1708090398947
+        }
+    ],
     "fonts": [
         {
             "id": "26fa15df-3318-44ad-8bfd-feff8ba7991d",
@@ -18448,9 +18423,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "8a52b387-2a88-4741-8d4e-ca56acea4672",
-        "startX": 15,
-        "startY": 21,
+        "startSceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
+        "startX": 34,
+        "startY": 37,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "right",
@@ -18458,8 +18433,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 36,
-        "worldScrollY": 0,
+        "worldScrollX": 965,
+        "worldScrollY": 1054,
         "zoom": 212.5,
         "customColorsEnabled": true,
         "sgbEnabled": false,
@@ -18488,9 +18463,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            447,
-            205,
-            377
+            432,
+            198,
+            364
         ],
         "showNavigator": true,
         "defaultFontId": "26fa15df-3318-44ad-8bfd-feff8ba7991d",

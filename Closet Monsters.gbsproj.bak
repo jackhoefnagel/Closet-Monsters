@@ -544,6 +544,19 @@
                                 "fadeSpeed": "2"
                             },
                             "id": "455865f6-431b-4d64-824d-03d016438ae5"
+                        },
+                        {
+                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                            "args": {
+                                "type": "993334a4-6b5e-4e1c-b9e5-83ea6db1ea15",
+                                "priority": "medium",
+                                "pitch": 4,
+                                "frequency": 200,
+                                "duration": 0.5,
+                                "wait": true,
+                                "effect": 0
+                            },
+                            "id": "be5040a1-30c0-4241-b4fd-116b66bc6014"
                         }
                     ],
                     "leaveScript": []
@@ -613,6 +626,13 @@
                         "$actor[2]$": "124e42d8-3cc4-400b-b2f9-877b9260c0ff"
                     },
                     "id": "96e4fce7-f587-4dc2-8fce-348be603f07b"
+                },
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "a6576cf6-7942-42fa-8240-505dd330d5e7"
+                    },
+                    "id": "687216f9-07ad-437a-971f-b559f6c08ec1"
                 }
             ],
             "playerHit1Script": [],
@@ -4000,7 +4020,7 @@
                                             "id": "a5dddc76-e5fe-424a-9b2b-1ad1834acefb",
                                             "command": "EVENT_SWITCH_SCENE",
                                             "args": {
-                                                "sceneId": "5e64882f-8ce6-423e-b582-70fdb2142ff6",
+                                                "sceneId": "7f0c3862-9816-48d3-84a2-bf721bb563b1",
                                                 "x": 9,
                                                 "y": 13,
                                                 "direction": "left",
@@ -9555,7 +9575,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "extras.png"
+            "filename": "extras.png",
+            "tileColors": []
         },
         {
             "id": "b340b9a2-2865-4e05-91c0-148846a693c8",
@@ -9598,7 +9619,8 @@
             "height": 20,
             "imageWidth": 200,
             "imageHeight": 160,
-            "filename": "intro0-0.png"
+            "filename": "intro0-0.png",
+            "tileColors": []
         },
         {
             "id": "7b9de834-d580-401d-bf20-44fb0436b4b0",
@@ -9608,7 +9630,8 @@
             "height": 19,
             "imageWidth": 168,
             "imageHeight": 152,
-            "filename": "intro0-1.png"
+            "filename": "intro0-1.png",
+            "tileColors": []
         },
         {
             "id": "f8b1c7ad-7bb2-44b2-8189-175ae8698f11",
@@ -9673,7 +9696,8 @@
             "height": 41,
             "imageWidth": 360,
             "imageHeight": 328,
-            "filename": "outside2_score.png"
+            "filename": "outside2_score.png",
+            "tileColors": []
         },
         {
             "id": "40fda058-df90-4205-a239-fe77bce4fa79",
@@ -18117,7 +18141,7 @@
                     "args": {
                         "actorId": "$self$",
                         "x": 0,
-                        "y": 2,
+                        "y": 5,
                         "moveType": "vertical",
                         "useCollisions": false
                     },
@@ -18233,6 +18257,14 @@
     ],
     "music": [
         {
+            "id": "a6576cf6-7942-42fa-8240-505dd330d5e7",
+            "name": "ClosetMonsters_outside",
+            "symbol": "song_song_template",
+            "filename": "ClosetMonsters_outside.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
             "id": "e2eb6dec-2800-4df9-a6c9-214f42e6b070",
             "name": "Rulz_GonaSpace",
             "symbol": "song_rulz_gonaspace",
@@ -18259,7 +18291,35 @@
             "type": "uge"
         }
     ],
-    "sounds": [],
+    "sounds": [
+        {
+            "id": "cc68d0d7-0b5e-426b-8bae-80c44011b2f1",
+            "name": "SFXR/click.wav",
+            "symbol": "sound_sfxr_click_wav",
+            "filename": "SFXR/click.wav",
+            "type": "wav",
+            "inode": "56119142",
+            "_v": 1708091109005
+        },
+        {
+            "id": "993334a4-6b5e-4e1c-b9e5-83ea6db1ea15",
+            "name": "SFXR/doorR.wav",
+            "symbol": "sound_sfxr_doorr_wav",
+            "filename": "SFXR/doorR.wav",
+            "type": "wav",
+            "inode": "56122976",
+            "_v": 1708091718507
+        },
+        {
+            "id": "4f48824a-4e3e-4c11-ac46-1935bdaf262e",
+            "name": "bat/39866__jobro__analog-screech.wav",
+            "symbol": "sound_39866_jobro_analog_sc",
+            "filename": "bat/39866__jobro__analog-screech.wav",
+            "type": "wav",
+            "inode": "56115555",
+            "_v": 1708090398947
+        }
+    ],
     "fonts": [
         {
             "id": "26fa15df-3318-44ad-8bfd-feff8ba7991d",
@@ -18448,9 +18508,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "8a52b387-2a88-4741-8d4e-ca56acea4672",
-        "startX": 15,
-        "startY": 21,
+        "startSceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
+        "startX": 34,
+        "startY": 37,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "right",
@@ -18458,8 +18518,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1023.2000122070312,
-        "worldScrollY": 800,
+        "worldScrollX": 965,
+        "worldScrollY": 502,
         "zoom": 212.5,
         "customColorsEnabled": true,
         "sgbEnabled": false,
@@ -18488,9 +18548,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            447,
-            205,
-            377
+            432,
+            198,
+            364
         ],
         "showNavigator": true,
         "defaultFontId": "26fa15df-3318-44ad-8bfd-feff8ba7991d",
