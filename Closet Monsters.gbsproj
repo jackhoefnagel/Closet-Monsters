@@ -1151,6 +1151,13 @@
             ],
             "script": [
                 {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "30516b55-87ee-4066-be32-99fb3057de9c"
+                    },
+                    "id": "a2c01c73-0d5c-4dbb-97f8-17dbe4dc8057"
+                },
+                {
                     "command": "EVENT_CALL_CUSTOM_EVENT",
                     "args": {
                         "customEventId": "872f61cf-bd62-4e58-92ee-a751e7335fe9"
@@ -1708,6 +1715,13 @@
                         "variable": "22"
                     },
                     "id": "183d05f3-52ff-4384-b154-76c262e60e13"
+                },
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "425f68e1-9eaf-4663-9e2f-f47a6c713206"
+                    },
+                    "id": "e95801ab-626e-40ff-8b01-5e7089398260"
                 }
             ],
             "playerHit1Script": [],
@@ -5914,7 +5928,8 @@
                         "operator": ">=",
                         "comparator": 1,
                         "__collapseElse": true,
-                        "__disableElse": true
+                        "__disableElse": true,
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -5929,6 +5944,13 @@
                         "false": []
                     },
                     "id": "b3d23950-8a44-4c8b-a05a-c28af294e0c2"
+                },
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "425f68e1-9eaf-4663-9e2f-f47a6c713206"
+                    },
+                    "id": "d2e58f56-f8ca-4cf1-a1aa-e8e7cd922aba"
                 }
             ],
             "playerHit1Script": [],
@@ -6443,6 +6465,13 @@
                         "false": []
                     },
                     "id": "2c022481-543e-450a-b675-b54d45a5be4f"
+                },
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "425f68e1-9eaf-4663-9e2f-f47a6c713206"
+                    },
+                    "id": "e67bd04d-d7dc-4f6a-a781-6e0601bec0f3"
                 }
             ],
             "playerHit1Script": [],
@@ -6957,6 +6986,13 @@
                         "false": []
                     },
                     "id": "4aa3e29f-1796-461e-ab43-62392a8f54c1"
+                },
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "425f68e1-9eaf-4663-9e2f-f47a6c713206"
+                    },
+                    "id": "e1996d64-50f8-41d8-9506-013d2a16cf94"
                 }
             ],
             "playerHit1Script": [],
@@ -7474,6 +7510,13 @@
                         "false": []
                     },
                     "id": "b44c983c-e62c-4165-99ec-b5624e920aff"
+                },
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "425f68e1-9eaf-4663-9e2f-f47a6c713206"
+                    },
+                    "id": "bcdddefd-2133-4942-8f55-20e5d38dfb14"
                 }
             ],
             "playerHit1Script": [],
@@ -18629,10 +18672,26 @@
     ],
     "music": [
         {
+            "id": "30516b55-87ee-4066-be32-99fb3057de9c",
+            "name": "Cave",
+            "symbol": "song_cave",
+            "filename": "Cave.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
             "id": "a6576cf6-7942-42fa-8240-505dd330d5e7",
             "name": "ClosetMonsters_outside",
             "symbol": "song_song_template",
             "filename": "ClosetMonsters_outside.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
+            "id": "425f68e1-9eaf-4663-9e2f-f47a6c713206",
+            "name": "House",
+            "symbol": "song_house",
+            "filename": "House.uge",
             "settings": {},
             "type": "uge"
         },
@@ -18655,7 +18714,7 @@
             "type": "mod"
         },
         {
-            "id": "14d7162f-cc7f-4a48-8b56-7932b5ab486e",
+            "id": "8df3bf55-cd83-4551-a4b7-40ba04d415b9",
             "name": "template",
             "symbol": "song_template_0",
             "filename": "template.uge",
@@ -18966,8 +19025,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 611,
-        "worldScrollY": 668,
+        "worldScrollX": 1060,
+        "worldScrollY": 927,
         "zoom": 167.86392820999026,
         "customColorsEnabled": true,
         "sgbEnabled": false,
