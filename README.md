@@ -9,14 +9,14 @@ WHAT'S BEHIND THE DOOR?
 
 ## 1. What we need
 ### 1.1 Actor Sprites
-- [ ] 4 direction Player
+- [x] 4 direction Player
 - [ ] 4 direction villager/monster S1 - S5
 - [ ] 8x8 empty/null (for interactables)
 
 ### 1.2 Background Sprites
 - [ ] Font/Menu secondary tile (mapped background tiles)
-- [ ] Theme/Jam Intro
-- [ ] Title
+- [x] Theme/Jam Intro
+- [x] Title
 - [ ] Credits
 - [ ] Stages: Village S0 (Hub?)
 - [ ] Stages: Indoors S1 - S5
@@ -28,13 +28,23 @@ WHAT'S BEHIND THE DOOR?
 - [ ] Menu bloops (can be defaults like beeps)
 - [ ] Interactions
 - [ ] Door/portal interactions
-- [ ] monster sfx (?)
+- [ ] Monster sfx (?)
+- [ ] Closet open/close
+- [ ] Scare
+- [ ] Villager talk
+- [ ] Emotes (scared, love, angry)
+- [ ] Boss talk
+- [ ] Boss defeat
 
 ### 1.4 Music
-- [ ] Title/Main Menu
-- [ ] Game loop
-- [ ] Boss stage
 - [ ] Pause (?)
+- [ ] Intro film
+- [ ] Title screen
+- [x] Outside
+- [ ] House (1 t/m 5? Of gewoon 1)
+- [ ] Bossfight
+- [ ] Game Over
+
 
 ### 1.5 Variables
 - [ ] Score counter
