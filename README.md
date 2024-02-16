@@ -21,7 +21,7 @@ WHAT'S BEHIND THE DOOR?
 - [ ] Stages: Village S0 (Hub?)
 - [ ] Stages: Indoors S1 - S5
 - [ ] Stages: Bossroom (S5)
-- [ ] Stages: Intro (intro movie)
+- [x] Stages: Intro (intro movie)
 - [ ] Stages: Home, Door
 
 ### 1.3 Sounds
