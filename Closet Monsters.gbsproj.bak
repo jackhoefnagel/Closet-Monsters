@@ -26265,9 +26265,9 @@
                         },
                         "y": {
                             "type": "number",
-                            "value": 15
+                            "value": 16
                         },
-                        "moveType": "horizontal",
+                        "moveType": "vertical",
                         "useCollisions": false
                     },
                     "id": "9872c7dc-9727-44c3-bc87-aa579b7bf785"
