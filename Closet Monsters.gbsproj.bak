@@ -4089,7 +4089,7 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "You can defeat em!"
+                                    " You can defeat\n em!"
                                 ],
                                 "avatarId": "f5d45bc6-474c-486f-8a84-e4796d7f21a4"
                             },
@@ -10370,20 +10370,6 @@
             "triggers": [],
             "script": [
                 {
-                    "command": "EVENT_PALETTE_SET_BACKGROUND",
-                    "args": {
-                        "palette0": "",
-                        "palette1": "keep",
-                        "palette2": "keep",
-                        "palette3": "keep",
-                        "palette4": "keep",
-                        "palette5": "keep",
-                        "palette6": "keep",
-                        "palette7": "keep"
-                    },
-                    "id": "66ee8c14-0315-4121-b868-0db76888db34"
-                },
-                {
                     "command": "EVENT_ACTOR_DEACTIVATE",
                     "args": {
                         "actorId": "$self$",
@@ -11051,20 +11037,6 @@
             "actors": [],
             "triggers": [],
             "script": [
-                {
-                    "command": "EVENT_PALETTE_SET_BACKGROUND",
-                    "args": {
-                        "palette0": "default-ui",
-                        "palette1": "keep",
-                        "palette2": "keep",
-                        "palette3": "keep",
-                        "palette4": "keep",
-                        "palette5": "keep",
-                        "palette6": "keep",
-                        "palette7": "keep"
-                    },
-                    "id": "a6505df2-b9e8-4151-abcf-b0e5c1b27b6f"
-                },
                 {
                     "command": "EVENT_ACTOR_DEACTIVATE",
                     "args": {
@@ -15594,7 +15566,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            " with that eep\n regained his\n fearlessness",
+                            " with that EEP\n regained his\n fearlessness",
                             " and learned\n that he can't\n do everything\n by himself",
                             " he lost\n conciousness\n after the fight",
                             " and found\n himself at home",
@@ -15640,7 +15612,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "black.png"
+            "filename": "black.png",
+            "tileColors": []
         },
         {
             "id": "6b58d759-6504-4fb6-8417-290e3cf78863",
@@ -15650,7 +15623,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "boss-intro-0.png"
+            "filename": "boss-intro-0.png",
+            "tileColors": []
         },
         {
             "id": "a69a3aba-2cf1-47d3-a421-cbab13235ef7",
@@ -15660,7 +15634,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "boss-intro-1.png"
+            "filename": "boss-intro-1.png",
+            "tileColors": []
         },
         {
             "id": "6fad1892-bcb2-4924-bd1c-1e4d03dfeabb",
@@ -16755,7 +16730,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "warning.png"
+            "filename": "warning.png",
+            "tileColors": []
         }
     ],
     "spriteSheets": [
@@ -29430,6 +29406,16 @@
             "symbol": "var_score_2"
         },
         {
+            "id": "173",
+            "name": "PlayerTwirl_BossFight_Triggered",
+            "symbol": "var_playertwirl_bossfight_t"
+        },
+        {
+            "id": "177",
+            "name": "PlayerTwirlY",
+            "symbol": "var_playertwirly"
+        },
+        {
             "id": "200",
             "name": "COMP_PLAYER_X",
             "symbol": "var_comp_player_x"
@@ -29468,16 +29454,6 @@
             "id": "4548028c-0fd3-4d59-90e3-002433e44af4__L0",
             "name": "Local 0",
             "symbol": "var_local_0"
-        },
-        {
-            "id": "173",
-            "name": "PlayerTwirl_BossFight_Triggered",
-            "symbol": "var_playertwirl_bossfight_t"
-        },
-        {
-            "id": "177",
-            "name": "PlayerTwirlY",
-            "symbol": "var_playertwirly"
         }
     ],
     "engineFieldValues": [
@@ -29498,7 +29474,7 @@
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
         "worldScrollX": 0,
-        "worldScrollY": 0,
+        "worldScrollY": 71.19999694824219,
         "zoom": 87.5,
         "customColorsEnabled": true,
         "sgbEnabled": false,
