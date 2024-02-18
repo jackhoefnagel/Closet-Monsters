@@ -3697,6 +3697,15 @@
                                 "false": []
                             },
                             "id": "085e196b-2379-4406-9753-fe748021e216"
+                        },
+                        {
+                            "command": "EVENT_WAIT",
+                            "args": {
+                                "time": 0.5,
+                                "frames": 1,
+                                "units": "frames"
+                            },
+                            "id": "903a3c8e-980f-42c5-b0d5-3a872e6d08c3"
                         }
                     ],
                     "moveSpeed": 3,
@@ -4080,7 +4089,7 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "You can defeat em!"
+                                    " You can defeat\n em!"
                                 ],
                                 "avatarId": "f5d45bc6-474c-486f-8a84-e4796d7f21a4"
                             },
@@ -9855,7 +9864,7 @@
                 {
                     "command": "EVENT_WAIT",
                     "args": {
-                        "time": 3,
+                        "time": 6,
                         "frames": 30
                     },
                     "id": "7e6d997e-96ea-4c42-b735-272560481b50"
@@ -9888,7 +9897,7 @@
                         "x": 0,
                         "y": 0,
                         "direction": "",
-                        "fadeSpeed": "2"
+                        "fadeSpeed": 3
                     },
                     "id": "b413a26b-a051-4c87-967a-0b614dd12f4c"
                 }
@@ -11522,8 +11531,8 @@
             "autoFadeSpeed": 1,
             "id": "2c3f3f6a-5ccd-4fe9-9e8c-ebb7b6733c61",
             "symbol": "scene_16",
-            "x": 568,
-            "y": 1276,
+            "x": 566.8571428571428,
+            "y": 1265.714285714286,
             "actors": [],
             "triggers": [],
             "script": [
@@ -15585,7 +15594,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            " with that eep\n regained his\n fearlessness",
+                            " with that EEP\n regained his\n fearlessness",
                             " and learned\n that he can't\n do everything\n by himself",
                             " he lost\n conciousness\n after the fight",
                             " and found\n himself at home",
@@ -29478,9 +29487,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "8a52b387-2a88-4741-8d4e-ca56acea4672",
-        "startX": 9,
-        "startY": 5,
+        "startSceneId": "fcf983cd-8914-4a1a-bb1b-cde5a777c738",
+        "startX": 0,
+        "startY": 1,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "right",

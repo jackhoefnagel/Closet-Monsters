@@ -3697,6 +3697,15 @@
                                 "false": []
                             },
                             "id": "085e196b-2379-4406-9753-fe748021e216"
+                        },
+                        {
+                            "command": "EVENT_WAIT",
+                            "args": {
+                                "time": 0.5,
+                                "frames": 1,
+                                "units": "frames"
+                            },
+                            "id": "903a3c8e-980f-42c5-b0d5-3a872e6d08c3"
                         }
                     ],
                     "moveSpeed": 3,
@@ -3771,6 +3780,19 @@
                                 "musicId": "ff01926d-b34d-4526-a40d-a3155832d3b3"
                             },
                             "id": "c58ea455-c7a9-49d2-a892-747a0537a6e6"
+                        },
+                        {
+                            "command": "EVENT_WAIT",
+                            "args": {
+                                "time": 1.5,
+                                "frames": 30
+                            },
+                            "id": "febbfc8d-0bdb-4327-93da-736ce9f967d9"
+                        },
+                        {
+                            "command": "EVENT_MUSIC_STOP",
+                            "args": {},
+                            "id": "b1b9c48f-aa2d-453c-83fd-05fdfe8c3b7f"
                         },
                         {
                             "command": "EVENT_TEXT",
@@ -9842,7 +9864,7 @@
                 {
                     "command": "EVENT_WAIT",
                     "args": {
-                        "time": 3,
+                        "time": 6,
                         "frames": 30
                     },
                     "id": "7e6d997e-96ea-4c42-b735-272560481b50"
@@ -9875,7 +9897,7 @@
                         "x": 0,
                         "y": 0,
                         "direction": "",
-                        "fadeSpeed": "2"
+                        "fadeSpeed": 3
                     },
                     "id": "b413a26b-a051-4c87-967a-0b614dd12f4c"
                 }
@@ -11509,8 +11531,8 @@
             "autoFadeSpeed": 1,
             "id": "2c3f3f6a-5ccd-4fe9-9e8c-ebb7b6733c61",
             "symbol": "scene_16",
-            "x": 568,
-            "y": 1276,
+            "x": 566.8571428571428,
+            "y": 1265.714285714286,
             "actors": [],
             "triggers": [],
             "script": [
@@ -15557,10 +15579,17 @@
             "id": "aad103f0-b998-4ca1-86bb-f19e106ee443",
             "symbol": "scene_0",
             "x": 1101.7142857142849,
-            "y": 441.14285714285734,
+            "y": 440.00000000000017,
             "actors": [],
             "triggers": [],
             "script": [
+                {
+                    "command": "EVENT_ACTOR_DEACTIVATE",
+                    "args": {
+                        "actorId": "$self$"
+                    },
+                    "id": "b282313f-89d8-46e6-88a7-bd9f4d0a8af4"
+                },
                 {
                     "command": "EVENT_TEXT",
                     "args": {
@@ -15584,6 +15613,17 @@
                         "avatarId": "5d916209-8047-405a-bb43-e1731f4a1c02"
                     },
                     "id": "86d45f9d-106c-4b8f-9488-5de260fe07ac"
+                },
+                {
+                    "command": "EVENT_SWITCH_SCENE",
+                    "args": {
+                        "sceneId": "f4f9acad-a101-4037-8214-a09418b79746",
+                        "x": 0,
+                        "y": 0,
+                        "direction": "",
+                        "fadeSpeed": "2"
+                    },
+                    "id": "68ebeba1-33bc-4eb8-a21c-3ba135c14e6e"
                 }
             ],
             "playerHit1Script": [],
@@ -29447,9 +29487,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "8a52b387-2a88-4741-8d4e-ca56acea4672",
-        "startX": 15,
-        "startY": 15,
+        "startSceneId": "fcf983cd-8914-4a1a-bb1b-cde5a777c738",
+        "startX": 0,
+        "startY": 1,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "right",
