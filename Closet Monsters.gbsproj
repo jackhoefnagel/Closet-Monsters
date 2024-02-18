@@ -2821,6 +2821,14 @@
                         "__collapse": false
                     },
                     "id": "0aa293fd-9e8e-4863-b98e-b780fbd249ba"
+                },
+                {
+                    "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                    "args": {
+                        "actorId": "$self$",
+                        "speed": 1
+                    },
+                    "id": "842d3f61-d268-425e-aa7d-d59acf8abfad"
                 }
             ],
             "playerHit1Script": [],
@@ -3572,7 +3580,12 @@
                                 "actorId": "$self$",
                                 "spriteStateId": "Opened"
                             },
-                            "id": "8f5914fc-137d-4cae-89a9-8d9b71ebd6da"
+                            "id": "26b3dbcf-a69d-4132-8bae-8e842d1fefab"
+                        },
+                        {
+                            "command": "EVENT_MUSIC_STOP",
+                            "args": {},
+                            "id": "d5706fd8-479d-46ff-8738-a81d3eb009ab"
                         },
                         {
                             "command": "EVENT_ACTOR_SET_STATE",
@@ -3601,6 +3614,21 @@
                             "id": "baa50fec-8a9d-49a8-8853-18679db68b67"
                         },
                         {
+                            "command": "EVENT_WAIT",
+                            "args": {
+                                "time": 1,
+                                "frames": 30
+                            },
+                            "id": "833268bb-5e94-4074-820b-dca1ac351dbb"
+                        },
+                        {
+                            "command": "EVENT_MUSIC_PLAY",
+                            "args": {
+                                "musicId": "ff01926d-b34d-4526-a40d-a3155832d3b3"
+                            },
+                            "id": "c58ea455-c7a9-49d2-a892-747a0537a6e6"
+                        },
+                        {
                             "command": "EVENT_ACTOR_SET_STATE",
                             "args": {
                                 "actorId": "$self$",
@@ -3624,9 +3652,17 @@
                             "id": "799df1cf-b42b-43ef-804a-14c9016cc1b4"
                         },
                         {
+                            "command": "EVENT_ACTOR_SET_STATE",
+                            "args": {
+                                "actorId": "$self$",
+                                "spriteStateId": "Opened"
+                            },
+                            "id": "8f5914fc-137d-4cae-89a9-8d9b71ebd6da"
+                        },
+                        {
                             "command": "EVENT_FADE_OUT",
                             "args": {
-                                "speed": 4
+                                "speed": 5
                             },
                             "id": "f4bc0bd0-2e9d-4ad1-ad41-898155561195"
                         },
@@ -3637,7 +3673,7 @@
                                 "x": 0,
                                 "y": 0,
                                 "direction": "",
-                                "fadeSpeed": 4
+                                "fadeSpeed": 6
                             },
                             "id": "66ff0330-7bd8-439a-998c-cb92e84c4717"
                         }
@@ -5327,6 +5363,13 @@
             ],
             "script": [
                 {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "f3f72835-2ce6-45e5-af1e-eb37bd1b2c7a"
+                    },
+                    "id": "fc41639a-179f-40be-9b2c-7bde09608f04"
+                },
+                {
                     "id": "8343c54c-07a1-4d30-892c-91db234b8d9b",
                     "command": "EVENT_ACTOR_DEACTIVATE",
                     "args": {
@@ -5348,7 +5391,7 @@
                     "args": {
                         "x": 0,
                         "y": 18,
-                        "speed": "2"
+                        "speed": 1
                     }
                 },
                 {
@@ -5357,6 +5400,11 @@
                     "args": {
                         "time": 2
                     }
+                },
+                {
+                    "command": "EVENT_MUSIC_STOP",
+                    "args": {},
+                    "id": "4d31915a-2f90-4e57-8d46-3385623137f5"
                 },
                 {
                     "id": "9daba1e6-c056-494a-babc-caa87913aa32",
@@ -5374,7 +5422,8 @@
             "playerHit2Script": [],
             "playerHit3Script": [],
             "type": "TOPDOWN",
-            "symbol": "scene_logo"
+            "symbol": "scene_logo",
+            "autoFadeSpeed": 1
         },
         {
             "id": "4912bee2-387a-472f-ae4f-6679b6149517",
@@ -5419,6 +5468,13 @@
                         "actorId": "player",
                         "__collapse": true
                     }
+                },
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "06bbec2e-efad-4674-9f32-94f28128d974"
+                    },
+                    "id": "26d6abd0-94ba-4fb9-898e-8ce1162bf074"
                 },
                 {
                     "id": "41b284dc-047f-4bb1-ad5c-f8ade30d034e",
@@ -9599,7 +9655,7 @@
         },
         {
             "name": "House5 (boss)",
-            "backgroundId": "2dd42ce8-2a4b-4ed1-a32f-b2715baf6445",
+            "backgroundId": "4023b92c-a4bc-47cc-a035-63f18226b924",
             "width": 20,
             "height": 18,
             "type": "TOPDOWN",
@@ -10129,7 +10185,7 @@
                 {
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
-                        "musicId": "425f68e1-9eaf-4663-9e2f-f47a6c713206"
+                        "musicId": "d53ce894-6408-48ed-adf9-17a5e8a53f76"
                     },
                     "id": "bcdddefd-2133-4942-8f55-20e5d38dfb14"
                 },
@@ -10563,17 +10619,19 @@
             "triggers": [],
             "script": [
                 {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "06bbec2e-efad-4674-9f32-94f28128d974"
+                    },
+                    "id": "269b3ca7-d584-44af-b65f-5eb0f3a0b113"
+                },
+                {
                     "command": "EVENT_WAIT",
                     "args": {
                         "time": 3,
                         "frames": 30
                     },
                     "id": "7e6d997e-96ea-4c42-b735-272560481b50"
-                },
-                {
-                    "command": "EVENT_MUSIC_STOP",
-                    "args": {},
-                    "id": "f36d9b96-4694-4900-924d-ff2c832960ab"
                 },
                 {
                     "command": "EVENT_CLEAR_DATA",
@@ -15270,6 +15328,17 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "houseBoss.png",
+            "tileColors": []
+        },
+        {
+            "id": "4023b92c-a4bc-47cc-a035-63f18226b924",
+            "name": "houseBoss2",
+            "symbol": "bg_pixil_frame_1",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "houseBoss2.png",
             "tileColors": []
         },
         {
@@ -28097,6 +28166,14 @@
     ],
     "music": [
         {
+            "id": "ff01926d-b34d-4526-a40d-a3155832d3b3",
+            "name": "BossDefeat",
+            "symbol": "song_bossdefeat",
+            "filename": "BossDefeat.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
             "id": "4a7b8bb6-07b8-4a3d-8772-10354f2806a4",
             "name": "BossFight",
             "symbol": "song_bossfight",
@@ -28125,6 +28202,30 @@
             "name": "House",
             "symbol": "song_house",
             "filename": "House.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
+            "id": "d53ce894-6408-48ed-adf9-17a5e8a53f76",
+            "name": "HouseBoss",
+            "symbol": "song_houseboss",
+            "filename": "HouseBoss.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
+            "id": "06bbec2e-efad-4674-9f32-94f28128d974",
+            "name": "IntroTitle",
+            "symbol": "song_introtitle",
+            "filename": "IntroTitle.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
+            "id": "f3f72835-2ce6-45e5-af1e-eb37bd1b2c7a",
+            "name": "Logo",
+            "symbol": "song_song_template_0",
+            "filename": "Logo.uge",
             "settings": {},
             "type": "uge"
         },
@@ -28174,29 +28275,29 @@
     "sounds": [
         {
             "id": "cc68d0d7-0b5e-426b-8bae-80c44011b2f1",
-            "name": "SFXR\\click.wav",
+            "name": "SFXR/click.wav",
             "symbol": "sound_sfxr_click_wav",
-            "filename": "SFXR\\click.wav",
+            "filename": "SFXR/click.wav",
             "type": "wav",
-            "inode": "23643898044806458",
+            "inode": "56119142",
             "_v": 1708091109005
         },
         {
             "id": "c4d0782b-cad9-4f51-b83f-11558dcd6ee7",
-            "name": "SFXR\\door.wav",
+            "name": "SFXR/door.wav",
             "symbol": "sound_sfxr_door_wav",
-            "filename": "SFXR\\door.wav",
+            "filename": "SFXR/door.wav",
             "type": "wav",
-            "inode": "22517998137963853",
+            "inode": "56124509",
             "_v": 1708092158037
         },
         {
             "id": "4f48824a-4e3e-4c11-ac46-1935bdaf262e",
-            "name": "bat\\39866__jobro__analog-screech.wav",
+            "name": "bat/39866__jobro__analog-screech.wav",
             "symbol": "sound_39866_jobro_analog_sc",
-            "filename": "bat\\39866__jobro__analog-screech.wav",
+            "filename": "bat/39866__jobro__analog-screech.wav",
             "type": "wav",
-            "inode": "18858823440725461",
+            "inode": "56115555",
             "_v": 1708090398947
         }
     ],
@@ -28600,9 +28701,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "5e64882f-8ce6-423e-b582-70fdb2142ff6",
-        "startX": 9,
-        "startY": 11,
+        "startSceneId": "8a52b387-2a88-4741-8d4e-ca56acea4672",
+        "startX": 21,
+        "startY": 7,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "right",
@@ -28610,8 +28711,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 200,
-        "worldScrollY": 300,
+        "worldScrollX": 545,
+        "worldScrollY": 289,
         "zoom": 125.89989974308992,
         "customColorsEnabled": true,
         "sgbEnabled": false,
@@ -28640,9 +28741,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            447,
-            169,
-            412
+            432,
+            163,
+            398
         ],
         "showNavigator": true,
         "defaultFontId": "26fa15df-3318-44ad-8bfd-feff8ba7991d",
